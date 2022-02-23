@@ -180,14 +180,24 @@ SITE MAIN
 }
 
 .cyan-r {
-    background-color: var(--dark-font-color);
+    background-color: var(--bg-alternative-color);
 }
 
 .wave1 {
     background-image: url("../img/wave.svg");
-    fill: red;
+    color: red;
     width: 100%;
     height: 3rem;
     background-color: var(--light-font-color);
 }
+
+.wave2 {
+    background-image: url("../img/wave.svg");
+    color: red;
+    width: 100%;
+    height: 3rem;
+    background-color: var(--bg-alternative-color);
+}
+
+
 
