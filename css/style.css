@@ -143,6 +143,11 @@ SITE HEADER
 /************
 SITE MAIN
 **********/
+
+#site_main {
+    color: var(--dark-font-color);
+}
+
 .col65, .col35 {
     padding: 2rem;
 }
@@ -155,14 +160,13 @@ SITE MAIN
 .col35 {
     width: 35%;
     float: left;
-    color: var(--dark-font-color)
 }
 
 .col65 > img {
     width: 100%;
 }
 
-.col35 > h3 {
+.col35 > h3, .content1 > h3 {
     font-size: 2rem;
     font-weight: bold;
     margin: 2rem 0;
@@ -183,20 +187,35 @@ SITE MAIN
     background-color: var(--bg-alternative-color);
 }
 
-.wave1 {
-    background-image: url("../img/wave.svg");
-    color: red;
-    width: 100%;
+/* .wave1, .wave2 {
+    margin-bottom: 0;
+} */
+
+.wave1 > svg {
+    /* fill: var(--light-font-color); */
     height: 3rem;
-    background-color: var(--light-font-color);
+    width: 100%;
+    fill: var(--bg-alternative-color);
 }
 
-.wave2 {
-    background-image: url("../img/wave.svg");
-    color: red;
-    width: 100%;
+.wave2 > svg {
+    /* fill: var(--light-font-color); */
     height: 3rem;
-    background-color: var(--bg-alternative-color);
+    width: 100%;
+    fill: var(--light-font-color);
+}
+
+
+.content1 {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content2 {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 
