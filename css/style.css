@@ -20,20 +20,10 @@ RESET RULES
     font-family: var(--font1);
 }
 
-/*************
-SITE HEADER
-*************/
-
-#site_header {
-    position: relative;
-    background-image: url("../img/jumbo.png");
-    background-size: cover;
-    background-position: center;
-}
-
+/* utility */
 
 .container {
-
+    position: relative;
     width: 1000px;
     margin: 0 auto;
     border: 1px solid black;
@@ -41,9 +31,30 @@ SITE HEADER
 
 }
 
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*************
+SITE HEADER
+*************/
+
+#site_header {
+    
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
 #site_navigation{
     line-height: 2rem;
 }
+
+
 
 #site_navigation::after {
     content: "";
@@ -128,4 +139,55 @@ SITE HEADER
     background-color: var(--dark-font-color);
 }
 
+
+/************
+SITE MAIN
+**********/
+.col65, .col35 {
+    padding: 2rem;
+}
+
+.col65 {
+    width: 65%;
+    float: left;
+}
+
+.col35 {
+    width: 35%;
+    float: left;
+    color: var(--dark-font-color)
+}
+
+.col65 > img {
+    width: 100%;
+}
+
+.col35 > h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2rem 0;
+
+}
+
+/* 
+.col35 > p {
+
+
+} */
+
+.white-r {
+    background-color: var(--light-font-color);
+}
+
+.cyan-r {
+    background-color: var(--dark-font-color);
+}
+
+.wave1 {
+    background-image: url("../img/wave.svg");
+    fill: red;
+    width: 100%;
+    height: 3rem;
+    background-color: var(--light-font-color);
+}
 
